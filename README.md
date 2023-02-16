@@ -28,13 +28,13 @@ Users should be able to:
 - **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
 
 ### Screenshot
-
+![Frontend-Mentor-Expenses-chart-component](https://user-images.githubusercontent.com/72587880/219486010-b4d4fa6a-4354-4207-80ea-257dab383cd5.png)
 
 
 ### Links
 
 - Solution URL: [Solution URL here](https://github.com/Robertron624/expenses-chart-component)
-- Live Site URL: [Live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live site URL here](https://classy-buttercream-a7297b.netlify.app/)
 
 ## My process
 
@@ -46,7 +46,7 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
-I also did the use the JSON file data to dynamically set the bars height
+I also did use the JSON file data to dynamically set the bars height
 
 ### What I learned
 
