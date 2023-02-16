@@ -8,11 +8,9 @@ function App() {
 
   let values = data.map((item) => parseFloat(item.amount)) // creating a list with all items amount property
 
-  let max = Math.max(...values) // Finding max value for setting it with different color
+  let today = new Date();
 
-  let sum = values.reduce((sum, value) => sum + value);
-
-  console.log(sum)
+  let todayDay = today.toUTCString().slice(0, 3).toLowerCase()
 
   return (
     <div className="App">
@@ -27,9 +25,9 @@ function App() {
         <h1>Spending - Last 7 days</h1>
         <div className="bars">
           {data.map((bar, i) => {
-            let isMax = false
-            if(bar.amount == max) isMax = true
-            return (<Bar key={i} amount={bar.amount} day={bar.day} isMax={isMax}/>)
+            let isToday = false
+            if(bar.day == todayDay) isToday = true
+            return (<Bar key={i} amount={bar.amount} day={bar.day} isToday={isToday}/>)
           })}
         </div>
       </div>

@@ -33,7 +33,7 @@
     background-color: var(--soft-red);
 }
 
-.max-bar {
+.today-bar {
     background-color: var(--cyan);
 }
 
@@ -49,6 +49,7 @@
     opacity: 0;
 }
 
+/* Show amount on bar-figure hover*/
 .bar-figure:hover .amount{
     opacity: 1;
 }

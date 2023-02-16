@@ -1,7 +1,7 @@
 import React from "react";
 import "./index.css";
 
-const Bar = ({ day, amount, isMax }) => {
+const Bar = ({ day, amount, isToday }) => {
     return (
         <div className="bar">
             <div className="bar-figure">
@@ -10,7 +10,7 @@ const Bar = ({ day, amount, isMax }) => {
                     style={{
                         height: `${amount * 1.5}%`, // Dynamiclly sets the height according to the amount
                     }}
-                    className={`${isMax ? 'max-bar' : 'normal-bar'}`}
+                    className={`${isToday ? 'today-bar' : 'normal-bar'}`}
                 ></span>
             </div>
             <span className="day">{day}</span>
