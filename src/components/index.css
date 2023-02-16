@@ -1,0 +1,54 @@
+.bar {
+    width: 2rem;
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+}
+
+.bar-figure {
+    width: 100%;
+    border-radius: 5px;
+    height: 10rem;
+    position: relative;
+}
+
+.bar-figure span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.bar-figure span:hover {
+    opacity: .7;
+}
+
+.normal-bar {
+    background-color: var(--soft-red);
+}
+
+.max-bar {
+    background-color: var(--cyan);
+}
+
+.amount {
+    font-size: .7rem;
+    font-weight: 700;
+    position: absolute;
+    padding: .3rem .4rem;
+    border-radius: 3px;
+    color: var(--very-pale-orange);
+    background-color: var(--dark-brown);
+    right: -20%;
+    opacity: 0;
+}
+
+.bar-figure:hover .amount{
+    opacity: 1;
+}

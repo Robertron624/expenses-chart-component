@@ -1,0 +1,129 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.App {
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+
+  --dark-brown: hsl(25, 47%, 15%);
+  --medium-brown: hsl(28, 10%, 53%);
+  --cream: hsl(27, 66%, 92%);
+  --very-pale-orange: hsl(33, 100%, 98%);
+
+  max-width: 30rem;
+  color: black;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+p, h1 {
+  margin: 0;
+}
+
+.balance-container {
+  background-color: var(--soft-red);
+  padding: 1.5rem 1rem; 
+  border-radius: 10px;
+  margin-bottom: .8rem;
+}
+
+.balance-footer, 
+.bars-container {
+  background-color: var(--very-pale-orange);
+}
+
+.balance-text {
+  text-align: left;
+  color: var(--cream);
+}
+
+.balance-text .balance-value {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+
+/* ---------------- Bars container ----------------------*/
+
+.bars-container {
+  height: auto;
+  padding: 1rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bars-container h1 {
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  text-align: left;
+}
+
+.bars {
+  display: flex;
+  color: var(--medium-brown);
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.bars-container::after{
+  content: "";
+  width: 100%;
+  background-color: var(--cream);
+  height: 2.5px;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+/*----------------- Footer section --------------------*/
+
+.balance-footer {
+  padding: 1rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.total-value {
+  text-align: left;
+}
+
+.total-value .total-text {
+  color: gray;
+}
+
+.total-value span {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.balance-delta {
+  text-align: right;
+}
+
+.balance-delta .delta-value{
+  font-weight: 700;
+}
+
+.balance-delta span {
+  color: gray;
+}
